@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+    <head lang="en">
+        <meta charset="UTF-8">
+        <title></title>
+        <link rel="stylesheet" href="../../stylesheets/styles.css">
+        <link rel="stylesheet" href="../../stylesheets/pygment_trac.css">
+    </head>
+    <body>
+        <div class="wrapper">
+            <header>
+                <h1>RSBot Scripting Tutorials</h1>
+                <span class="view"><a href="../../lessons/setup/IntelliJ.html">Setting up RSBot for IntelliJ</a></span>
+                <br>
+                <span class="view"><a href="../../lessons/pollingscript/PollingScript.html">PollingScript</a></span>
+            </header>
+            <section>
+                <script src="https://gist.github.com/Strikegently/937125d36759d51296a7.js"></script>
+                <p></p>
+                <h3>PollingScript</h3>
+                <p>
+                    <span class="code">PollingScript</span> is the most basic type of script in RSBot. It offers a
+                    method, <span class="code">poll()</span>, that loops
+                    until the script is stopped. The main logic of your script will be placed inside the <span
+                        class="code">poll()</span> method.
+                    <br>
+                    In addition to the <span class="code">poll()</span> method, PollingScript offers the methods <span
+                        class="code">start()</span> and <span class="code">stop()</span>.
+                    <br>
+                    The <span class="code">start()</span> method is executed only once when the script is started. This
+                    is the method that should
+                    be used to set up your script (setting start XP, launching GUIs, etc).
+                    <br>
+                    The <span class="code">stop()</span> method is executed only once when the script is stopped.
+                </p>
+                <p></p>
+                <h3>Script Manifest</h3>
+                <p>
+                    The Script Manifest is where details of the script, like its name and description, are stored. For a
+                    script to appear locally or on the SDN, it must have a manifest. There are 3 basic parts to the
+                    manifest: the name, the description, and the properties.
+                    <br><br>
+                    The name flag is the name of the script. This is what the script is listed as on the SDN and the
+                    script selector. The description flag is the description of the script. It shows below the name on
+                    the SDN, and below the script selector in the client.
+                </p>
+                <p></p>
+                <h3>ClientContext</h3>
+                <p>
+                    <span class="code">ClientContext</span> will be discussed in the next chapter, but it needs to be
+                    touched on briefly
+                    here.
+                    <br>
+                    <span class="code">ClientContext</span> is the class that stores all of the API classes that
+                    interface with the game. For
+                    the <span class="code">PollingScript</span> parameterization, it signifies which type of context
+                    your script will be using,
+                    and is part of the identification process for the SDN to determine if your script is for OS or RS3.
+                </p>
+            </section>
+        </div>
+    </body>
+</html>
