@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html>
+    <head lang="en">
+        <meta charset="UTF-8">
+        <title>Setting up RSBot for IntelliJ</title>
+        <link type="text/css" rel="stylesheet" href="../../../rsbot/style/stylesheet.css"/>
+    </head>
+    <body>
+        <div class="content">
+            <h2>Setting up RSBot for IntelliJ</h2>
+            <ul>
+                <li>Setting the appropriate language level</li>
+                <li>
+                    <ul>
+                        <li>The RSBot SDN compiles on Java 6, so it is recommended you do the same, to eliminate
+                            possible conflicts.
+                        </li>
+                        <li>
+                            To set your language level:
+                            <ol>
+                                <li>Go to File > Project Settings and select Project.</li>
+                                <li>
+                                    Under Project SDK, select JDK 1.6. If you don't have it, you can download it from <a
+                                        href="http://www.oracle.com/technetwork/java/javase/downloads/java-archive-downloads-javase6-419409.html#jdk-6u45-oth-JPR">Oracle</a>
+                                </li>
+                                <li>Just below, there is Project Language Level. Set this to 6.</li>
+                            </ol>
+                            <img src="../../resources/language-level.png">
+                        </li>
+                    </ul>
+                </li>
+                <li>Adding RSBot to your Project</li>
+                <li>
+                    <ul>
+                        <li>
+                            <ol>
+                                <li>While still on the Project Settings page, select Libraries from the left.</li>
+                                <li>Click the green + on the left-hand side and select the "Java" option.</li>
+                                <li>A file tree will open. Select the RSBot.jar</li>
+                                <li>Select OK / Apply</li>
+                            </ol>
+                            <img src="../../resources/libraries.png">
+                        </li>
+                    </ul>
+                </li>
+                <li>Setting up your Run Configurations</li>
+                <li>
+                    <ul>
+                        <li>
+                            <ol>
+                                <li>
+                                    At the top-right of the main window, there is a small button with a arrow (<a
+                                        href="../../resources/run-arrow.png">image</a>).
+                                    Click it, and select the "Edit Configurations" option.
+                                </li>
+                                <li>Click the green + at the top-left and select "Application"</li>
+                                <li>Set your main class to org.powerbot.Boot</li>
+                                <li>
+                                    Set your VM Options to
+                                    <br>
+                                    -Xmx384m -Xss2m -XX:CompileThreshold=1500 -Xincgc
+                                    -XX:+UseConcMarkSweepGC -XX:+UseParNewGC
+                                </li>
+                                <li>Set your Program Arguments to "-debug". This allows you to load local scripts.</li>
+                                <li>
+                                    Check the "Use Alternate JRE" option. This <i>must</i> be a JRE, not JDK.
+                                    OpenGL/DirectX will not work if it is a JDK.
+                                </li>
+                                <li>Select OK / Apply</li>
+                            </ol>
+                            <img src="../../resources/run-options.png">
+                        </li>
+                    </ul>
+                </li>
+            </ul>
+        </div>
+    </body>
+</html>
