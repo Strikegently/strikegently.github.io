@@ -1,1 +1,1 @@
-[](http://strikegently.github.io/)
+http://strikegently.github.io/
