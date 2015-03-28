@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+    <head lang="en">
+        <meta charset="UTF-8">
+        <title>ClientContext</title>
+        <link rel="stylesheet" href="/stylesheets/styles.css">
+        <script src="http://code.jquery.com/jquery-1.11.2.js"></script>
+        <script src="/javascript/header.js"></script>
+    </head>
+    <body>
+        <div class="wrapper">
+            <section>
+                <h3>ClientContext</h3>
+                <p>
+                    <span class='code'>ClientContext</span> is the class that contains the API classes for
+                    interfacing with the game. Any time you need access information about the game, it will have to go
+                    through the <span class='code'>ClientContext</span>. <span class='code'>ClientContext</span> can be
+                    inherited from <span class='code'>AbstractScript</span>(the parent class of <span class='code'>PollingScript</span>)
+                    or from any class that extends <span class='code'>ClientAccessor</span> as the variable <span
+                        class='code'>ctx</span>.
+                </p>
+                <h3>Context Classes</h3>
+                <ul>
+                    <li><span class='code'>backpack</span>: contains methods for accessing information about the user's
+                        backpack, getting the items they have, how many items, etc.
+                    </li>
+                    <li><span class='code'>bank</span>: contains methods for accessing information about the user's bank
+                        (what items it contains, if it's currently open, depositing, withdrawing, etc)
+                    </li>
+                    <li><span class='code'>camera</span>: contains methods for turning the camera and changing the
+                        pitch.
+                    </li>
+                    <li><span class='code'>chat</span>: utility class for chat widgets (selecting chat options/continue)
+                    </li>
+                    <li><span class='code'>combatBar</span>: contains information about the combat bar, including
+                        activating abilities.
+                    </li>
+                    <li><span class='code'>depositBox</span>: has similar methods to <span class='code'>bank</span>, but
+                        for deposit boxes.
+                    </li>
+                    <li><span class='code'>equipment</span>: contains information about what the user has equipped.</li>
+                    <li><span class='code'>game</span>: contains information specifically related to the game state (if
+                        the user is logged in, the current status)
+                    </li>
+                    <li><span class='code'>groundItems</span>: GroundItems are items on the ground (duh). This contains
+                        methods for getting information about them.
+                    </li>
+                    <li><span class='code'>hud</span>: Hud is the RS3 ribbon (backpack, skills, etc), and contains
+                        methods to open/close each 'tab'
+                    </li>
+                    <li><span class='code'>lobby</span>: contains methods for traversing the lobby (logging in, changing
+                        worlds, etc)
+                    </li>
+                    <li><span class='code'>movement</span>: contains methods for moving/walking.</li>
+                    <li><span class='code'>npcs</span>: contains the methods for accessing in-game Npcs (Men, Guards,
+                        etc).
+                    </li>
+                    <li><span class='code'>objects</span>: contains the methods for accessing GameObjects (ladders,
+                        doors, etc).
+                    </li>
+                    <li><span class='code'>players</span>: contains methods for accessing information about players,
+                        including the user's player.
+                    </li>
+                    <li><span class='code'>powers</span>: contains information related to prayers and curses.</li>
+                    <li><span class='code'>skills</span>: contains information about skill levels and current experience
+                    </li>
+                    <li><span class='code'>summoning</span>: contains the methods for accessing information about
+                        summoning (if you have a familiar summoned, what familiar you have, your familiar's timer, etc).
+                    </li>
+                    <li><span class='code'>widgets</span>: contains information about widgets (in-game buttons)</li>
+                </ul>
+            </section>
+        </div>
+    </body>
+</html>

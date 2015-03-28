@@ -8,6 +8,10 @@ var header =
     "<span class=\"view\"><a href=\"/lessons/IntelliJ.html\">Setting up RSBot for IntelliJ</a></span>" +
     "<br>" +
     "<span class=\"view\"><a href=\"/lessons/PollingScript.html\">PollingScript</a></span>" +
+    "<br>" +
+    "<span class=\"view\"><a href=\"/lessons/ClientContext.html\">ClientContext</a></span>" +
+    "<br>" +
+    "<span class=\"view\"><a href=\"/lessons/QueryIntro.html\">Query Introduction</a></span>" +
     "</header>";
 
 $(document).ready(function () {
