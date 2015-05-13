@@ -14,8 +14,8 @@
                 <p>
                     The Query API is the main system in RSBot to get the information you need. The vast majority of the
                     RSBot API is reliant on the Query system, so a solid understanding of it is necessary. There are
-                    several different types of queries, all with a unique purpose, but all of them extend the base <span
-                        class='code'>AbstractScript</span>, and their general syntax is all the same. The query system
+                    several different types of queries, all with a unique purpose, but all of them extend the base
+                    <code>AbstractScript</code>, and their general syntax is all the same. The query system
                     is a chained, fluent API much like jQuery (which is was designed after) and the Java Stream API.
                     Each method will modify the contents of the query, then return itself.
                     This allows you to chain function calls, instead of having to call each separately.
@@ -24,31 +24,30 @@
                 <br>
                 So if we dissect the query call:
                 <ul>
-                    <li><span class='code'>select()</span>: populate the query with all of the loaded Npcs</li>
-                    <li><span class='code'>name("Guard")</span>: filter the query to only include Npcs named 'Guard'
-                    </li>
-                    <li><span class='code'>nearest()</span>: sort the query by distance, nearest first</li>
-                    <li><span class='code'>poll()</span>: return and remove the head (first entity) in the query</li>
+                    <li><code>select()</code>: populate the query with all of the loaded Npcs</li>
+                    <li><code>name("Guard")</code>: filter the query to only include Npcs named 'Guard'</li>
+                    <li><code>nearest()</code>: sort the query by distance, nearest first</li>
+                    <li><code>poll()</code>: return and remove the head (first entity) in the query</li>
                 </ul>
                 <p>
                     It is very important to note that the contents of the query are persistent through calls,
-                    until reset using <span class='code'>select()</span>. So the call the <code>nearest()</code> only
+                    until reset using <code>select()</code>. So the call the <code>nearest()</code> only
                     applies the sort the previous contents of the query (Npcs named Guard").
                 </p>
                 <h3>AbstractQuery Methods</h3>
                 These are not all of the methods, just the important ones.
                 <ul>
-                    <li><span class='code'>select()</span>: resets and populates the query with the loaded entities.
+                    <li><code>select()</code>: resets and populates the query with the loaded entities.
                     </li>
-                    <li><span class='code'>select(Filter&lt;K&gt;)</span>: filters the current elements by the given
-                        filter. Does NOT reset the contents. <span class='code'>select()</span> and <span class='code'>select(Filter)</span>
+                    <li><code>select(Filter&lt;K&gt;)</code>: filters the current elements by the given
+                        filter. Does NOT reset the contents. <code>select()</code> and <code>select(Filter)</code>
                         have nothing to do with each other.
                     </li>
-                    <li><span class='code'>size()</span>: returns the number of the elements in the query.</li>
-                    <li><span class='code'>isEmpty()</span>: returns if the size of the query is zero (0).</li>
-                    <li><span class='code'>poll()</span>: returns and removes the head (first element) of the query.
+                    <li><code>size()</code>: returns the number of the elements in the query.</li>
+                    <li><code>isEmpty()</code>: returns if the size of the query is zero (0).</li>
+                    <li><code>poll()</code>: returns and removes the head (first element) of the query.
                     </li>
-                    <li><span class='code'>peek()</span>: returns and preserves the head of the query.</li>
+                    <li><code>peek()</code>: returns and preserves the head of the query.</li>
                 </ul>
                 <h3>Using Queries</h3>
                 <script src="https://gist.github.com/Strikegently/ed9622c80c12a17f898b.js"></script>

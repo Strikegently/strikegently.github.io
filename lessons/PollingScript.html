@@ -14,21 +14,19 @@
                 <p></p>
                 <h3>PollingScript</h3>
                 <p>
-                    <span class="code">PollingScript</span> is the most basic type of script in RSBot. It offers a
-                    method, <span class="code">poll()</span>, that loops
-                    until the script is stopped. The main logic of your script will be placed inside the <span
-                        class="code">poll()</span> method.
+                    <code>PollingScript</code> is the most basic type of script in RSBot. It offers a method, <code>poll()</code>,
+                    that loops until the script is stopped. The main logic of your script will be placed inside the
+                    <code>poll()</code> method.
                     <br>
-                    In addition to the <span class="code">poll()</span> method, PollingScript offers the methods <span
-                        class="code">start()</span> and <span class="code">stop()</span>.
+                    In addition to the <code>poll()</code> method, PollingScript offers the methods <code>start()</code>
+                    and <code>stop()</code>.
                     <br>
-                    The <span class="code">start()</span> method is executed only once when the script is started. This
+                    The <code>start()</code> method is executed only once when the script is started. This
                     is the method that should
                     be used to set up your script (setting start XP, launching GUIs, etc).
                     <br>
-                    The <span class="code">stop()</span> method is executed only once when the script is stopped.
+                    The <code>stop()</code> method is executed only once when the script is stopped.
                 </p>
-                <p></p>
                 <h3>Script Manifest</h3>
                 <p>
                     The Script Manifest is where details of the script, like its name and description, are stored. For a
@@ -39,16 +37,14 @@
                     script selector. The description flag is the description of the script. It shows below the name on
                     the SDN, and below the script selector in the client.
                 </p>
-                <p></p>
                 <h3>ClientContext</h3>
                 <p>
-                    <span class="code">ClientContext</span> will be discussed in the next chapter, but it needs to be
-                    touched on briefly
-                    here.
+                    <code>ClientContext</code> will be discussed in the next chapter, but it needs to be
+                    touched on briefly here.
                     <br>
-                    <span class="code">ClientContext</span> is the class that stores all of the API classes that
+                    <code>ClientContext</code> is the class that stores all of the API classes that
                     interface with the game. For
-                    the <span class="code">PollingScript</span> parameterization, it signifies which type of context
+                    the <code>PollingScript</code> parameterization, it signifies which type of context
                     your script will be using,
                     and is part of the identification process for the SDN to determine if your script is for OS or RS3.
                 </p>
