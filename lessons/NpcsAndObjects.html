@@ -10,7 +10,34 @@
     <body>
         <div class="wrapper">
             <section>
-                <p>Coming Soon.</p>
+                <h3>Npcs and GameObjects</h3>
+                <p>
+                    Npcs and GameObjects are used almost entirely the same, minus a few specific methods. They are both
+                    accessed from their respective query class (Npcs and GameObjects) which both extend MobileIdQuery,
+                    so their query usage is almost exactly the same as well. To reduce redundancy, they were merged into
+                    one page.
+                </p>
+                <h3>Npcs</h3>
+                <p>
+                    Npcs are in-game representations of Non-Player Characters. All Npcs in the game can be accessed from
+                    the Npc query class (<code>ctx.npcs</code>). This class has all of the same methods as a standard
+                    query (see <span><a href="QueryIntro.html">Query Introduction</a></span>), and is used in the same
+                    manner.
+                </p>
+                <h3>GameObjects</h3>
+                <p>
+                    GameObjects are an in-game representation of objects within the game, like bank booths (but
+                    not bankers, since they are Npcs), chests, and doors. Like Npcs, the GameObject query class
+                    (<code>ctx.objects</code>) extends MobileIdQuery, so it has the same methods.
+                </p>
+                <h3>IDs</h3>
+                <p>
+                    Npcs and GameObjects have a unique number that can be used to identify them. The vast majority of
+                    the time, you will use IDs to find an Npc or GameObject. You can find an Npc's ID by going to View >
+                    Npcs, and a GameObject's by going to View > Objects in the client. Their ID (as well as other
+                    relative information) will be displayed over them. You can use the
+                    <code>id(int...)</code> method in the query to filter based on ID.
+                </p>
             </section>
         </div>
     </body>
