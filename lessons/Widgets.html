@@ -10,7 +10,36 @@
     <body>
         <div class="wrapper">
             <section>
-                <p>Coming Soon.</p>
+                <h3>Widgets and Components</h3>
+                <p>
+                    Widgets and Components are the in-game buttons and text displays. For instance, all of the tabs in
+                    the Hud (Skills, Gear, Inventory, etc.) are all made up of Components.
+                    As a general rule of thumb, a Component is contained within (or acts as as child to) a Widget.
+                </p>
+                <h3>Finding and Getting Components</h3>
+                <p>
+                    In the client, you can go to View > Widgets and the Widget Viewer tool will open. This tool allows
+                    you to browse the currently valid widgets and components. When you select a widget, it will be
+                    outlined with a yellow rectangle. As you go further down the tree
+                    (Widget > Component > Component > ...), the identifying rectangle to update to the reflect the
+                    currently selected component. Each component has a unique index value that is used to identify it.
+                    You will use this index to fetch it for use.
+                    Once you have the indices of the component you're looking for, you can use it with the widget API to
+                    fetch its instance.
+                    <p>
+                    To fetch a specific Widget instance, you can use the <code>widget(int index)</code> method:
+                    <br>
+                    <code>Widget widget = ctx.widgets.widget(0);</code>
+                    <p>
+                    To fetch a specific Component, you use the <code>component(int widget, int component)</code> method:
+                    <br>
+                    <code>Component component = ctx.widgets.component(0, 1);</code>
+                    <p>
+                    For a nested Component (component within a component), you can use the <code>component(int
+                    component)</code> method in the Component class:
+                    <br>
+                    <code>Component component = ctx.widgets.component(0, 1).component(2);</code>
+                </p>
             </section>
         </div>
     </body>
