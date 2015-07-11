@@ -4,6 +4,17 @@
     display: block;
 }
 
+.wrapper {
+    width: 860px;
+    margin: 0 auto;
+}
+
+.code {
+    font-family: Monaco, Terminal, monospace;
+    color: #333;
+    font-size: 12px;
+}
+
 body {
     padding: 50px;
     font: 14px/1.5 Lato, sans-serif;
@@ -47,17 +58,6 @@ a small {
     color: #777;
     margin-top: -0.6em;
     display: block;
-}
-
-.wrapper {
-    width: 860px;
-    margin: 0 auto;
-}
-
-.code {
-    font-family: Monaco, Terminal, monospace;
-    color: #333;
-    font-size: 12px;
 }
 
 code {
@@ -112,61 +112,13 @@ header {
 }
 
 header ul {
+    padding-left: 25px;
     list-style: none;
-    height: 40px;
-
-    padding: 0;
-
-    background: #eee;
-    background: -moz-linear-gradient(top, #f8f8f8 0%, #dddddd 100%);
-    background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #f8f8f8), color-stop(100%, #dddddd));
-    background: -webkit-linear-gradient(top, #f8f8f8 0%, #dddddd 100%);
-    background: -o-linear-gradient(top, #f8f8f8 0%, #dddddd 100%);
-    background: -ms-linear-gradient(top, #f8f8f8 0%, #dddddd 100%);
-    background: linear-gradient(top, #f8f8f8 0%, #dddddd 100%);
-
-    border-radius: 5px;
-    border: 1px solid #d2d2d2;
-    box-shadow: inset #fff 0 1px 0, inset rgba(0, 0, 0, 0.03) 0 -1px 0;
-    width: 270px;
-}
-
-header li {
-    width: 89px;
-    float: left;
-    border-right: 1px solid #d2d2d2;
-    height: 40px;
-}
-
-header ul a {
-    line-height: 1;
-    font-size: 11px;
-    color: #999;
-    display: block;
-    text-align: center;
-    padding-top: 6px;
-    height: 40px;
 }
 
 strong {
     color: #222;
     font-weight: 700;
-}
-
-header ul li + li {
-    width: 88px;
-    border-left: 1px solid #fff;
-}
-
-header ul li + li + li {
-    border-right: none;
-    width: 89px;
-}
-
-header ul a strong {
-    font-size: 14px;
-    display: block;
-    color: #222;
 }
 
 section {
