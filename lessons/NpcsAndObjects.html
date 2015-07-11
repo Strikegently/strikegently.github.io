@@ -38,6 +38,21 @@
                     relative information) will be displayed over them. You can use the
                     <code>id(int...)</code> method in the query to filter based on ID.
                 </p>
+                <h3>Name</h3>
+                <p>
+                    MobileIdQuery inherits from Nameable, which provides a name to the entities via the
+                    <code>name()</code> method. You can use the <code>name(String...)</code> method in the query to
+                    filter based on name.
+                </p>
+                <h3>Location</h3>
+                <p>
+                    MobileIdQuery also inherits the <code>tile()</code> method from Locatable, and the
+                    <code>at(Tile)</code> and <code>within(double)</code> methods from Locatable.Query.
+                    You can use the <code>at(Tile)</code> method to filter the query results to filter results based
+                    on the target's specific location, and the <code>within(double)</code> to filter results based on
+                    distance from the local player to the target.
+                    See <a href="Walking.html">Walking</a> for more information on Tiles.
+                </p>
             </section>
         </div>
     </body>
