@@ -40,6 +40,19 @@
                     <br>
                     <code>Component component = ctx.widgets.component(0, 1).component(2);</code>
                 </p>
+                <h3>Chat API</h3>
+                <p>
+                    The API includes a set of helper functions specifically built for traversing the chat widgets.
+                    It's used similarly to any other query. The <code>text(String...)</code> method will filter
+                    currently available chat options by text. The <code>poll()</code> method will return a ChatOption
+                    instance, which you can then <code>select(boolean)</code> to select. Passing <code>true</code> will
+                    press the key associated with the option to activate it. Alternatively, passing <code>false</code>
+                    will use the mouse to click the option.
+                    <br>
+                    <code>ChatOption chat = ctx.chat.select().text(String...)poll();</code>
+                    <br>
+                    <code>chat.select(true);</code>
+                </p>
             </section>
         </div>
     </body>
