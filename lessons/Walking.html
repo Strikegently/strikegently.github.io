@@ -10,7 +10,19 @@
     <body>
         <div class="wrapper">
             <section>
-                <p>Coming Soon.</p>
+                <h3>Walking</h3>
+                <p>
+                    All of the tools needed for walking are in the Movement class (<code>ctx.movement</code>). It
+                    contains methods for walking to a specific Tile, or for creating a path to traverse.
+                </p>
+                <p>
+                <h3>Walking Methods</h3>
+                <ul>
+                    <li><code>step(Locatable)</code>: uses the minimap to step towards the specified Locatable. Does not
+                        work well for long distances.
+                    </li>
+                    <li><code>newTilePath(Tile...)</code>: returns a new TilePath instance with the specified tiles.</li>
+                </ul>
             </section>
         </div>
     </body>

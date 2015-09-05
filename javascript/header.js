@@ -11,7 +11,6 @@ var header =
     "<span class=\"view\"><a href=\"/lessons/Widgets.html\">Widgets and Chat</a></span>" +
     "<span class=\"view\"><a href=\"/lessons/Interacting.html\">Interacting</a></span>" +
     "<span class=\"view\"><a href=\"/lessons/Banking.html\">Banking</a></span>" +
-    "<span class=\"view\"><a href=\"/lessons/Walking.html\">Walking</a></span>" +
     "</header>";
 
 $(document).ready(function () {
