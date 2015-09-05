@@ -10,7 +10,39 @@
     <body>
         <div class="wrapper">
             <section>
-                <p>Coming Soon.</p>
+                <h3>Interacting</h3>
+                <p>
+                    Interacting with an entity, whether it is an Npc, a GameObject, or a Widget, will be at the core of
+                    every script you make. Everything that you can interact with extends Interactive, which supplies the
+                    <code>interact()</code> methods.
+                <p>
+                    <code>final Npc guard = ctx.npcs.select().name("Guard").nearest().poll();</code>
+                    <br>
+                    <code>guard.interact("Attack");</code>
+                    <br>
+                    <code>guard.interact("Attack", guard.name());</code>
+                </p>
+                <h3>The Interaction Methods</h3>
+                <ul>
+                    <li>
+                        <code>interact(String action)</code>: interacts with the entity, right-clicking if necessary,
+                        and selecting the first menu option with the specified action. The action is what you are doing
+                        to the entity (e.g. "Attack" on a guard).
+                        <br>
+                        <b>Note:</b> this always selects the
+                        first option available, so if there are multiple options with the same action (i.e. looting
+                        items on the ground) it will select the first menu option, not necessarily that of the
+                        specific entity you want. See <code>interact(String action, String option)</code>
+                    </li>
+                    <li>
+                        <code>interact(String action, String option)</code>: interacts with the entity, right-clicking
+                        if necessary, and selecting the first menu option with both the specified action and the
+                        specified option. The option is what you are performing the action upon (i.e. the name of the
+                        entity;
+                        <br>
+                        e.g. <code>interact("Take", "Bones")</code>).
+                    </li>
+                </ul>
             </section>
         </div>
     </body>
