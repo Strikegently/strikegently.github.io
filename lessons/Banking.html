@@ -10,7 +10,31 @@
     <body>
         <div class="wrapper">
             <section>
-                <p>Coming Soon.</p>
+                <h3>Banking</h3>
+                <p>
+                    All of the methods associated with banking are contained in the Bank class (<code>ctx.bank</code>).
+                    The class contains methods for opening, closing, withdrawing, and depositing from the bank, as well
+                    as a Query for determining the contents.
+                </p>
+                <p>
+                <h3>Banking Methods</h3>
+                <ul>
+                    <li>
+                        <code>open()</code>: opens the nearest bank. Returns <code>true</code> if it successfully opened
+                        the bank, false otherwise.
+                    </li>
+                    <li><code>opened()</code>: returns if the bank is currently open.</li>
+                    <li><code>close()</code>: closes the bank. Returns if it successfully closed the bank.</li>
+                    <li><code>withdraw(int id, int amount)</code>: withdraws the specified amount of the item with the
+                        specified ID. Returns true if it withdrew the items, false otherwise.
+                        <br>
+                        Note: passing 0 for <code>amount</code> with select the "Withdraw-All" option. Passing -1 will
+                        select the "Withdraw-All but one" option.
+                    </li>
+                    <li><code>depositInventory()</code>: clicks the "Deposit Inventory" button. Returns true if it
+                        clicked it.
+                    </li>
+                </ul>
             </section>
         </div>
     </body>
