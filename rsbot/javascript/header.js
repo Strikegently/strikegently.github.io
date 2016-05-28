@@ -1,8 +1,7 @@
 $(document).ready(function () {
     var $header = $(".wrapper header");
     if (!$header.length) {
-        $header = $("<header></header>");
-        $(".wrapper").prepend($header);
+        $(".wrapper").prepend("<header></header>");
     }
-    $header.load("/rsbot/header.html");
+    $($header).load("/rsbot/header.html");
 });
