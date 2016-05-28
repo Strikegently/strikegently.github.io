@@ -4,5 +4,5 @@ $(document).ready(function () {
         $header = $("<header></header>");
         $(".wrapper").prepend($header);
     }
-    $header.load("../header.html");
+    $header.load("/rsbot/header.html");
 });
